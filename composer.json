@@ -1,5 +1,5 @@
 {
-    "name": "laminas/laminas-json",
+    "name": "magento/magento-zf-json",
     "description": "provides convenience methods for serializing native PHP to JSON and decoding JSON to native PHP",
     "license": "BSD-3-Clause",
     "keywords": [
@@ -23,12 +23,15 @@
     },
     "abandoned": true,
     "require": {
-        "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+        "php": "^8.1"
     },
     "require-dev": {
         "laminas/laminas-coding-standard": "~2.4.0",
         "laminas/laminas-stdlib": "^2.7.7 || ^3.19",
         "phpunit/phpunit": "^9.5.25"
+    },
+    "replace": {
+      "laminas/laminas-json": "^3.7"
     },
     "suggest": {
         "laminas/laminas-json-server": "For implementing JSON-RPC servers",
